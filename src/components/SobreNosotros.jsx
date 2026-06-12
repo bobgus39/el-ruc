@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import useIntersectionObserver from '../hooks/useIntersectionObserver'
 
 const STATS = [
-  { value: 15, suffix: '+', label: 'Años en Ibi' },
+  { value: 100, suffix: '%', label: 'Hecho a mano' },
   { value: 30, suffix: '+', label: 'Variedades de pan' },
   { value: 20, suffix: '', label: 'Sabores de helado' },
   { value: 100, suffix: '%', label: 'Artesanal' },
@@ -88,12 +88,12 @@ export default function SobreNosotros() {
           <div className="flex flex-col gap-6">
             <div>
               <h3 className="font-display text-2xl md:text-3xl text-ruc-brown font-semibold mb-4 leading-snug">
-                Un obrador con raíces profundas en Ibi
+                Un obrador con alma en el corazón de Ibi
               </h3>
               <p className="text-ruc-chocolate/75 font-body leading-relaxed text-base md:text-lg">
-                El Ruc nació del amor por el buen pan y la cocina de siempre. Lo que empezó como
-                un pequeño obrador familiar en el corazón de Ibi se ha convertido en el lugar al
-                que vuelves cuando quieres saber que algo está hecho de verdad.
+                El Ruc nació con una idea clara: hacer las cosas bien, sin atajos.
+                Un obrador en el corazón de Ibi donde cada pieza se trabaja a mano
+                y cada día empieza antes de que amanezca.
               </p>
             </div>
             <div>

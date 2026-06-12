@@ -33,7 +33,7 @@ export default function Footer() {
             </p>
             <p className="text-sm leading-relaxed text-ruc-cream/60 mb-5">
               Panadería artesanal, pizzas caseras y helados naturales.
-              Hecho con harina, fuego y mucho cariño desde 2009.
+              Hecho con harina, fuego y mucho cariño desde 2026.
             </p>
             <div className="flex gap-3">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"

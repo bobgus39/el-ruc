@@ -1,0 +1,31 @@
+# Dependencias
+
+node_modules/
+
+
+# Build
+dist/
+vite/
+
+# Variables de entorno — NUNCA subir al repo
+.env
+.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# GitHub Pages (rama gestionada por gh-pages)
+# La rama gh-pages se genera automáticamente — no editar a mano

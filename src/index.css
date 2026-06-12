@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ruc-cream text-ruc-chocolate font-body antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply font-display text-3xl md:text-4xl lg:text-5xl text-ruc-brown font-semibold leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-ruc-honey font-semibold text-sm uppercase tracking-widest mb-3;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-[0_8px_30px_rgba(232,146,42,0.25)] hover:-translate-y-1;
+  }
+
+  .btn-primary {
+    @apply bg-ruc-honey text-white font-semibold px-6 py-3 rounded-full
+           hover:bg-ruc-mustard transition-all duration-200 shadow-md hover:shadow-lg
+           active:scale-95;
+  }
+
+  .btn-outline {
+    @apply border-2 border-ruc-brown text-ruc-brown font-semibold px-6 py-3 rounded-full
+           hover:bg-ruc-brown hover:text-white transition-all duration-200
+           active:scale-95;
+  }
+
+  .fade-section {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+
+  .fade-section.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .grain-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #FAF3E0; }
+::-webkit-scrollbar-thumb { background: #D4B896; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #C17F24; }
+
+/* Tab indicator override for HeroUI */
+[data-selected="true"] {
+  color: #E8922A !important;
+}
